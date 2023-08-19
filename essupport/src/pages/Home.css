@@ -1,0 +1,367 @@
+.home-container {
+    padding-top: 75px;
+    color: #000000;
+    /* Ajusta el valor según la altura de tu Header */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+
+}
+
+.slick-slide {
+    position: relative;
+    z-index: 1;
+}
+
+.slick-slide img {
+    z-index: 1;
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+.slider-button {
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+}
+
+.slider-button-left {
+    /* Agrega un margen superior para bajarlo */
+    margin-top: 200px;
+
+    /* Coloca el botón por encima del slider con posicionamiento absoluto */
+    position: absolute;
+    top: 0;
+    left: 20px;
+    /* Puedes ajustar el valor de 'left' según tu diseño */
+    z-index: 1;
+    /* Asegura que el botón esté por encima del slider */
+}
+
+.slider-button-right {
+    margin-top: 200px;
+    position: absolute;
+    top: 0;
+    left: 190vh;
+    /* Puedes ajustar el valor de 'left' según tu diseño */
+    z-index: 1;
+}
+
+
+.slider-content {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.slider-icon {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    /* Adjust the font size as needed */
+    margin-right: 5px;
+    /* Adjust the margin as needed */
+}
+
+.slider-icon {
+    font-size: 24px;
+    margin: 0 8px;
+}
+
+/* Ajusta el posicionamiento del icono en el slider */
+.slider-container .slider-content {
+    position: relative;
+
+}
+
+.slider-bar {
+    margin: 0 5px;
+}
+
+.slider-content span {
+    margin: 0 5px;
+}
+
+.slider-text {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    /* Adjust the font size as needed */
+}
+
+
+
+/* Estilos para el slider de categorías */
+.categoria-home-container {
+
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.categoria-home-h2 {
+    margin-bottom: 0px;
+    text-align: center;
+    width: 16%;
+    /* background: linear-gradient(to bottom, #299be7, #000000); */
+    background-color: transparent;
+    border: 1px solid #ececec;
+    border-radius: 15px;
+}
+
+.categoria-home-separador {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to bottom, #cddde7, #043b68);
+}
+
+@media screen and (max-width: 768px) {
+    .categoria-home-h2 {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .categoria-home-h2 {
+        width: 45%;
+    }
+
+    .categoria-home-separador {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.categoria-slider-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.categoria-slider-container .icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    margin: 0 10px;
+}
+
+.categoria-slider-container .icon.disabled {
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.categoria-item {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.categoria-imagen-container img {
+    width: 250px;
+    height: 200px;
+}
+
+.categoria-imagen {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.categoria-imagen:hover {
+    transform: scale(1.1);
+}
+
+.categoria-overlay {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    border-radius: 0 0 50% 50%;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.categoria-item:hover .categoria-overlay {
+    display: block;
+}
+
+.categoria-nombre {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.categoria-ver-mas-button {
+
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.categoria-ver-mas-button:hover {
+    background-color: #0056b3;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+
+    .categoria-imagen-container img {
+        width: 100px;
+        height: 90px;
+    }
+
+    .categoria-imagen {
+        width: 100px;
+        height: 100px;
+    }
+
+    .categoria-overlay p {
+        font-size: 9px;
+    }
+
+    .categoria-ver-mas-button {
+        font-size: 10px;
+    }
+}
+
+
+/* PEDIFERICOS ID 5 */
+.product-list-container {
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.product-item {
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+
+}
+
+.product-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-name,
+.product-description,
+.product-price,
+.product-stock {
+    margin: 0;
+}
+
+.show-all-button {
+
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.show-all-button:hover {
+    background-color: #0056b3;
+}
+
+.show-all-link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+.buy-link {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #022e4b;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+ 
+}
+.buy-link:hover {
+
+    background-color: #0f4783;
+    color: #fff;
+    
+}
+
+
+
+/* Para pantallas con un ancho máximo de 768px */
+@media (max-width: 868px) {
+    .product-list {
+        padding: 10px 70px 10px 90px;
+        grid-template-columns: 1fr;
+    }
+
+    .show-all-button {
+        margin-left: 90px;
+    }
+}
+
+/* Para pantallas con un ancho máximo de 480px */
+@media (max-width: 480px) {
+    .product-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ofertas */
+.oferta-descuento-home {
+    position: relative;
+    top: -260px;
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 16px;
+}

@@ -1,0 +1,74 @@
+/* MensajesChat.css */
+
+.chat-container {
+    position: relative;
+}
+
+.chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00BFFF;
+    color: rgb(230, 236, 238);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 100;
+}
+
+.chat-icon.open {
+    background-color: #ff6347;
+}
+
+.chat-modal {
+    color: black;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+    z-index: 101;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.close-button {
+    background-color: #10708d;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.close-button:hover {
+    background-color: #042836;
+}
+
+.message-list {
+    list-style: none;
+    padding: 0;
+}
+
+.message {
+    color: #0000;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

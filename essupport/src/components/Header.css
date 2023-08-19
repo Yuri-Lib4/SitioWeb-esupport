@@ -1,0 +1,657 @@
+/* Estilos generales del header */
+.header {
+  z-index: 2;
+  position: relative;
+  background-color: #033652;
+  color: #08567a;
+}
+
+/* Estilos para el contenedor que ocupa toda la pantalla */
+.header-container {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+
+}
+
+/* Logo */
+.navbar-brand img {
+  width: 100px;
+  /* Cambia el valor según el tamaño deseado */
+  height: auto;
+  /* La altura se ajustará proporcionalmente */
+}
+
+/* Estilos para Iniciar sesión y Carrito de compras */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 10px;
+  margin-right: 25px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  padding-right: 20px;
+}
+
+.item {
+  list-style: none;
+  margin-right: 10px;
+}
+
+.link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.item a {
+  font-size: 20px;
+  color: #1156ac;
+}
+
+/* Estilos para el ícono de "Iniciar sesión" */
+.link i {
+  color: #023c50;
+  font-size: 10px;
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+/* Estilos para el ícono de "Carrito de compras" */
+.link .bi-cart {
+  font-family: "bootstrap-icons";
+  content: "\f07a";
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+/* Estilos para el modo de escritorio */
+@media (min-width: 768px) {
+  .top-bar {
+
+    background-color: #eceff1;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    padding: 5px 20px;
+   
+    
+    
+  }
+
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    border: 1px solid #0a5ac4;
+    border-radius: 10px;
+    padding: 5px;
+  }
+
+  .search-bar input[type="text"] {
+    flex: 1;
+    color: #01010a;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .search-bar .search-button {
+    width: 100px;
+    height: 45px;
+    background-color: #1bb9e9;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .search-button:hover {
+    background-color: #06345a;
+  }
+
+  .search-bar .search-button .icon {
+    margin-right: 8px;
+  }
+}
+
+/* Estilos para el modo móvil */
+@media (max-width: 767px) {
+  .top-bar {
+    background-color: #fdfdfd;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 55px 90px 0px 10px;
+  }
+
+  .link i {
+    color: rgb(5, 43, 75);
+  }
+
+  .item a {
+    font-size: 14px;
+  }
+
+  .navbar-brand img {
+    width: 70px;
+    height: auto;
+  }
+
+  .search-bar {
+    display: none;
+  }
+
+  .contact {
+    color: #054c99;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+  }
+
+  .contact .social-icons {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+  }
+
+  .contact .item {
+    list-style: none;
+    margin-right: 10px;
+  }
+
+  .contact .link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .contact .link i {
+    color: #0a6285;
+    font-size: 24px;
+    margin-right: 8px;
+  }
+
+  .contact .link .bi-cart {
+    font-family: "bootstrap-icons";
+    content: "\f07a";
+    font-size: 24px;
+    margin-right: 8px;
+  }
+}
+
+.mb-3 input {
+  background-color: transparent;
+}
+
+/* buscador */
+
+/* Estilos para la sección de resultados de búsqueda */
+.search-results {
+  margin-top: 20px;
+}
+
+/* Estilos para cada elemento de resultado */
+.search-result-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #af0909;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-result-item h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.search-result-item p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* Estilos para el botón de búsqueda */
+.search-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para el campo de búsqueda */
+.search-bar input[type="text"] {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+}
+.logout-button{
+  margin-right: 20px;
+  background-color: transparent;
+  color: #0056b3;
+  font-size: 15px;
+  text-decoration: underline; /* Línea añadida para subrayar el texto */
+}
+
+
+/* Estilos para el contenedor principal */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+/* Estilos para los links del menú */
+.menu-links {
+  z-index: 4;
+  width: 100%;
+  background-color: #e7e1e1;
+  display: grid;
+  position: fixed;
+  grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+  padding: 14px 15px;
+
+  /* Para salir del flujo normal y ocupar toda la pantalla */
+  left: 0;
+  /* Alinea a la izquierda de la pantalla */
+  right: 0;
+  /* Alinea a la derecha de la pantalla */
+
+  /* Eliminar el relleno del menú */
+  /* Eliminar el margen del menú */
+  /* Fondo blanco para el menú */
+  /* Mantener el menú pegado en la parte superior */
+  /* top: 0; /* Distancia desde la parte superior de la ventana */
+  /* Asegurar que el menú esté por encima de otros elementos */
+  /* overflow: hidden; /* Ocultar el contenido que se desborda del contenedor */
+  /*white-space: nowrap; Evitar el salto de línea en los enlaces */
+}
+
+
+.menu-links li a {
+  width: 100%;
+  color: #022d64;
+  /* Color del texto */
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  /* Aumentar el relleno (padding) horizontal y vertical */
+  transition: color 0.3s, background-color 0.3s;
+  /* Agregar una transición suave */
+
+}
+
+.menu-links li a:hover {
+
+  color: #fff;
+  /* Cambiar el color del texto al pasar el mouse */
+  background-color: #176fd3d3;
+  /* Cambiar el fondo del enlace al pasar el mouse */
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0 0 10px rgba(40, 60, 241, 0.5);
+  /* Agregar una sombra suave al enlace */
+
+}
+
+
+.navbar-toggler {
+  border: none;
+  color: #fff;
+  background-color: transparent;
+  display: none;
+  /* Ocultar el botón en pantallas no móviles */
+}
+
+
+/* Estilo para el ícono del botón de navegación cuando está activo */
+.navbar-toggler-icon {
+  background-image: url('ruta-a-tu-icono.svg');
+  color: #ffffff;
+}
+
+/* Media queries para dispositivos con un ancho máximo de 768px */
+@media (max-width: 768px) {
+
+  /* Ocultar el menú principal */
+  .menu-links {
+    position: absolute;
+    z-index: 2;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    align-items: center;
+  }
+
+  .menu-links li {
+    margin: 0 15px;
+  }
+
+  .navbar-toggler {
+    position: absolute;
+    z-index: 1;
+    margin-top: 110px;
+    display: block;
+    background-color: #dadfe2;
+    width: 70px;
+    height: 50px;
+    /* Muestra el icono en pantallas pequeñas */
+  }
+
+  /* Estilos para el menú desplegable en modo móvil */
+  .menu-links.open {
+    display: flex;
+    flex-direction: column;
+    background-color: #063963;
+    position: absolute;
+    top: 120px;
+    right: 0;
+    width: 50%;
+    box-shadow: 0 0 10px rgba(250, 249, 249, 0.2);
+    border-radius: 0 0 5px 5px;
+    transition: max-height 0.3s ease-in-out;
+    max-height: 200px;
+    margin-right: 100px;
+    overflow-y: auto;
+  }
+
+  .menu-links.open li {
+    margin: 10px;
+  }
+
+
+  /* Estilos para los enlaces del menú */
+  .menu-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s;
+  }
+
+  .menu-links li a:hover {
+    color: #00D8FF;
+  }
+
+  /* Mostrar el botón de navegación (hamburguesa) */
+  .navbar-toggler {
+    display: block;
+    position: absolute;
+    top: 20px;
+    /* Ajusta la posición vertical del botón */
+    right: 20px;
+    /* Ajusta la posición horizontal del botón */
+    z-index: 2;
+    /* Asegura que el botón esté por encima del contenido */
+  }
+
+  /* Cambiar el color del icono del botón de navegación */
+  .navbar-toggler-icon {
+    background-image: url('../assets/menu.svg');
+    /* Cambia el icono del botón */
+    width: 30px;
+    /* Ajusta el ancho del icono */
+    height: 30px;
+    /* Ajusta el alto del icono */
+  }
+
+  /* Estilos para el menú desplegable en dispositivos móviles */
+  .collapse {
+    background-color: #ffffff;
+    /* Cambia el fondo del menú desplegable */
+    position: absolute;
+    top: 80px;
+    /* Ajusta la posición vertical del menú desplegable */
+    right: 0;
+    /* Ajusta la posición horizontal del menú desplegable */
+    width: 100%;
+    /* Asegura que el menú ocupe todo el ancho */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Agrega una sombra suave al menú */
+    z-index: 1;
+    /* Asegura que el menú esté por encima del contenido */
+  }
+
+  /* Cambiar el estilo de los enlaces en el menú desplegable */
+  .collapse li a {
+    padding: 15px 20px;
+    /* Ajusta el relleno (padding) de los enlaces */
+    display: block;
+    /* Muestra los enlaces en bloques */
+    text-align: center;
+    /* Centra el texto en los enlaces */
+    color: #022d64;
+    /* Cambia el color del texto en los enlaces */
+    background-color: #fff;
+    /* Cambia el fondo de los enlaces */
+    border-bottom: 1px solid #ccc;
+    /* Agrega una línea divisora entre los enlaces */
+  }
+
+  /* Cambiar el color del enlace al pasar el mouse */
+  .collapse li a:hover {
+    background-color: #176fd3d3;
+    /* Cambia el fondo del enlace al pasar el mouse */
+    color: #fff;
+    /* Cambia el color del texto al pasar el mouse */
+  }
+
+  .header-esupport .menu-icon {
+    width: 35.93px;
+    height: 32px;
+    transition: fill 0.3s;
+    /* Agrega una transición suave al color */
+  }
+
+  .header-esupport .menu-icon:hover {
+    fill: #176fd3d3;
+    /* Cambia el color al pasar el mouse */
+  }
+
+}
+
+
+
+/* Notificacion*/
+.notification {
+  position: fixed;
+  /* Cambiamos de 'fixed' a 'sticky' */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to right, #44abf0, #940606);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  /* Centramos horizontalmente el contenido */
+  align-items: center;
+  /* Centramos verticalmente el contenido */
+  padding: 0px;
+  border-radius: 8px 8px 0px 0px;
+  z-index: 200;
+}
+
+.notification-content {
+  display: flex;
+  align-items: center;
+  /* Centramos el contenido horizontalmente */
+}
+
+.notification-text {
+  margin-right: 16px;
+  text-align: center;
+  /* Centramos el texto horizontalmente */
+}
+
+.notification-button {
+  background-color: #fff;
+  color: #007bff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Agregamos una clase para mantener la barra pegada después de llegar al menú de enlaces */
+.sticky-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Ajustamos la posición del menú de enlaces cuando la barra superior esté pegada */
+.sticky-bar .menu-links {
+  margin-top: 0;
+  position: sticky;
+  top: 70px;
+  /* Altura de la barra superior */
+}
+
+
+
+/* Estilos para el fondo del modal */
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Fondo semitransparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  /* Asegura que el modal se muestre encima de todo */
+}
+
+/* Estilos para el contenedor del modal */
+.modal-container {
+  color: #022d64;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Estilos para el contenido del modal */
+.modal-content {
+  margin-bottom: 15px;
+}
+
+/* Estilos para el título del modal */
+.modal-content h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+/* Estilos para el formulario del modal */
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilos para las etiquetas del formulario */
+.modal-content label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Estilos para los campos de entrada del formulario */
+.modal-content input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+/* Estilos para los botones del formulario */
+.modal-content button {
+  margin: 5px;
+  /* Agrega un pequeño margen entre los botones */
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Estilos para el botón de registro */
+.modal-content .btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Estilos para el botón de cerrar */
+.modal-content .btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+/* Estilos para el contenedor de los botones */
+.modal-content .buttons-container {
+  display: flex;
+  justify-content: center;
+  /* Alinea los botones en el centro horizontal */
+}
+
+/* Estilos adicionales para la notificación de éxito */
+.success-notification {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #485004;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.success-notification p {
+  margin: 0;
+  padding: 0;
+}
+
+.success-notification button {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+/* Resto de los estilos... */

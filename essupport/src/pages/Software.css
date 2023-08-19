@@ -1,0 +1,485 @@
+.software-container {
+    padding: 80px 80px 0px 80px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.software-volver{
+    display: flex;
+    gap: 50px;
+}
+.software-iconos-container {
+    padding: 30px 150px 0px 150px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.software-icon {
+    margin-bottom: 10px;
+    /* Ajusta el valor para separar el icono del texto */
+    background-color: transparent;
+    /* Relleno transparente */
+    border: 2px solid #f1f3f5;
+    /* Borde del círculo */
+    color: white;
+    /* Color del icono */
+    border-radius: 50%;
+    /* Para hacer el círculo */
+    font-size: 10px;
+    padding: 20px;
+    /* Espacio alrededor del icono dentro del círculo */
+    transition: background-color 0.3s;
+    width: 130px;
+    /* Ajusta el valor para establecer un ancho fijo para el ícono */
+    height: 130px;
+    /* Ajusta el valor para establecer una altura fija para el ícono */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.software-icon:hover {
+    background-color: rgba(225, 235, 255, 0.5);
+}
+
+.software-text-parrafo {
+    color: rgb(243, 242, 245);
+    font-size: 20px;
+}
+/* Media queries para ajustar diseño en pantallas más pequeñas */
+@media (max-width: 768px) {
+    .software-container {
+        padding: 20px;
+    }
+    
+    .software-iconos-container {
+        padding: 20px;
+        grid-template-columns: 50% 50%;
+    }
+    
+    .software-icon {
+        width: 100px;
+        height: 100px;
+        font-size: 16px;
+    }
+    
+    .software-text-parrafo {
+        margin-right: 100px;
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+
+/* .icon-desktop{
+    margin-top: 45px;
+} */
+
+/* Impresora */
+
+.software-container-impresora {
+   
+    padding: 90px 150px 10px 150px;
+}
+
+.impresora-software-container {
+    padding: 20px 10px 5px 20px;
+    display: grid;
+    grid-template-columns: 60% 10% 30%;
+
+}
+
+.impresora-software-icon {
+    margin-bottom: 10px;
+    /* Ajusta el valor para separar el icono del texto */
+    background-color: transparent;
+    /* Relleno transparente */
+    border: 2px solid #f1f3f5;
+    /* Borde del círculo */
+    color: white;
+    /* Color del icono */
+    border-radius: 50%;
+    /* Para hacer el círculo */
+    padding: 10px;
+    /* Espacio alrededor del icono dentro del círculo */
+    transition: background-color 0.3s;
+    width: 35px;
+    /* Ajusta el valor para establecer un ancho fijo para el ícono */
+    height: 35px;
+    /* Ajusta el valor para establecer una altura fija para el ícono */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-printer{
+    background-color: rgba(225, 235, 255, 0.5);
+}
+.impresora-software-icon:hover {
+    background-color: rgba(225, 235, 255, 0.5);
+}
+
+.impresora-software-iconos-container {
+    padding: 20px 0px 5px 0px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.impresora-separator {
+
+    width: 100%;
+    background-color: #ccc;
+    /* Color de la barra */
+    margin: 0 20px;
+    /* Espacio a los lados de la barra */
+    height: 2px;
+    /* Ajusta la altura al 100% para ocupar todo el espacio disponible */
+}
+
+.impresora-software-pie-separator {
+    padding: 20px 0px 30px 20px;
+    display: grid;
+    grid-template-columns: 48% 4% 48%;
+}
+
+.impresoras-slider-container {
+    max-width: 300px;
+    /* Cambia el valor según tus necesidades */
+}
+
+/* Aplicar estilos directamente a las imágenes */
+.impresoras-slider-container img {
+    width: 400px;
+    /* Cambia el valor según el tamaño deseado */
+    height: 300px;
+    /* Cambia el valor según el tamaño deseado */
+}
+
+/* Estilos para el contenedor del slider */
+.impresoras-slider-container{
+    position: relative;
+}
+
+/* Estilos para los iconos "<" y ">" */
+.slider-controls {
+    position: absolute;
+    top: 50%;
+    /* Ajusta el valor para separar el icono del texto */
+    background-color: transparent;
+    /* Relleno transparente */
+    border: 2px solid #054581;
+    /* Borde del círculo */
+    color: #054581;
+    font-size: 25px;
+    /* Color del icono */
+    border-radius: 50%;
+    /* Para hacer el círculo */
+    padding: 10px;
+    /* Espacio alrededor del icono dentro del círculo */
+    transition: background-color 0.3s;
+    width: 35px;
+    /* Ajusta el valor para establecer un ancho fijo para el ícono */
+    height: 35px;
+    /* Ajusta el valor para establecer una altura fija para el ícono */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prev {
+    left: 10px;
+    /* Ubicar el icono "<" en el lado izquierdo del contenedor */
+}
+
+.next {
+    right: -90px;
+    /* Ubicar el icono ">" en el lado derecho del contenedor */
+}
+.slider-controls:hover{
+    color: #ffff;
+    background-color: #054581;
+}
+.text-ejemplo-pieslider{
+    padding: 0px;
+}
+.text-software-h3{
+    padding: 0px ;
+    font-size: 20px;
+    
+}
+/* Media queries para ajustar diseño en pantallas más pequeñas */
+@media (max-width: 768px) {
+    .software-container-impresora {
+        padding: 20px;
+    }
+    
+    .impresora-software-container {
+        padding: 20px;
+        grid-template-columns: 100%;
+    }
+    
+    .impresora-software-icon {
+        width: 25px;
+        height: 25px;
+        font-size: 12px;
+        padding: 6px;
+    }
+    
+    .impresora-software-pie-separator {
+        grid-template-columns: 100%;
+        padding: 20px 0px;
+    }
+    
+    .impresoras-slider-container img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .slider-controls {
+        width: 25px;
+        height: 25px;
+        font-size: 15px;
+        padding: 6px;
+    }
+    
+    .text-software-h3 {
+        font-size: 18px;
+    }
+}
+
+
+/* PORTATIL */
+
+.icon-laptoportatil{
+    background-color: rgba(225, 235, 255, 0.5);
+}
+
+/* SOBREMESA */
+.icon-desktopsobremesa{
+    background-color: rgba(225, 235, 255, 0.5);
+}
+
+/* OTROS */
+
+.icon-other-software{
+    background-color: rgba(225, 235, 255, 0.5);
+}
+
+/* SOPORTEIMPRESPRAS */
+
+.soporteimpresoras-container{
+    padding: 90px 0px 0px 0px;
+
+}
+.soporte-imagen-container{
+    padding: 0px 180px 0px 180px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.soporte-imagen-container img{
+    
+    width: 300px; /* Ajusta el ancho de la imagen según tus necesidades */
+    height: 100px; /* La altura se ajusta automáticamente para mantener la proporción */  
+    
+}
+.soporteimpresora-separator{
+    
+    width: 100%;
+    background-color: #ccc;
+    /* Color de la barra */
+    /* Espacio a los lados de la barra */
+    height: 2px;
+}
+/* Media query para ajustar diseño en pantallas más pequeñas */
+@media (max-width: 768px) {
+    .soporteimpresoras-container {
+        padding: 50px 0px 0px 0px;
+    }
+
+    .soporte-imagen-container {
+        padding: 0px 0px;
+    }
+
+    .soporte-imagen-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .soporteimpresora-separator {
+        width: 100%;
+        height: 2px;
+    }
+}
+
+
+
+.impresorasicons-soporte-container{
+    padding: 30px 180px 15px 180px;
+    
+}
+
+.icons-soporte-container{
+    text-align: center;
+    padding-bottom: 5px;
+    display: grid;
+    grid-template-columns: 24% 2% 25% 2% 23% 2% 24%;
+}
+.soporteimpresora-separatorvertical{
+    width: 2px;
+    background-color: #ccc;
+    /* Color de la barra */
+    /* Espacio a los lados de la barra */
+    height: 100%;
+}
+
+.body-soporte-imagen-container{
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 49.5% 1% 49.5%;
+}
+.body-soporte-imagen-container img{
+    padding: 30px 30px 20px 0px;
+    width: 410px; /* Ajusta el ancho de la imagen según tus necesidades */
+    height: 250px;
+}
+.informacion-soporte-imagen-container{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 47.5% 5% 47.5%;
+}
+.informacion-soporte-imagen-container img{
+    margin-top: 20px;
+    margin-left: 70px;
+    width: 200px; /* Ajusta el ancho de la imagen según tus necesidades */
+    height: 150px;  
+}
+.informacion-parrafosegundodiv{
+    margin-top: 40px;
+}
+.soportimpresoras-contenedor2{
+    width: 100vw;
+    /*height: 100vh;*/
+    background-color: rgb(3, 61, 95);
+}
+.iconos{
+    color: rgb(177, 178, 180);
+    font-size: 35px;
+}
+.impresoras-icon-container:hover{
+    color: #ffff;
+}
+.iconos:hover{
+    color: #ffff;
+}
+
+/* Media query para ajustar diseño en pantallas más pequeñas */
+@media (max-width: 768px) {
+    .impresorasicons-soporte-container {
+        padding: 30px 20px 15px 20px;
+    }
+
+    .icons-soporte-container {
+        grid-template-columns: 24% 2% 25% 2% 23% 2% 24%;
+    }
+
+    .soporteimpresora-separatorvertical {
+        width: 2px;
+    }
+
+    .body-soporte-imagen-container {
+        grid-template-columns: 48.5% 3% 48.5%;
+    }
+
+    .body-soporte-imagen-container img {
+        padding: 30px 10px 20px 0px;
+        width: 100%; /* Ajustar imagen al ancho del contenedor */
+        height: auto; /* Ajustar altura proporcionalmente */
+    }
+
+    .informacion-soporte-imagen-container {
+        grid-template-columns: 47.5% 5% 47.5%;
+    }
+    .iconos{
+        font-size: 25px;
+    }
+
+    .informacion-soporte-imagen-container img {
+        margin-top: 20px;
+        margin-left: 20px; /* Ajustar el margen izquierdo */
+        width: 200px; /* Ajustar imagen al ancho del contenedor */
+        height: auto; /* Ajustar altura proporcionalmente */
+    }
+
+    .soportimpresoras-contenedor2 {
+        /* Mantener el ancho del 100% y el color de fondo */
+        background-color: rgb(3, 61, 95);
+    }
+}
+
+
+
+/* SOPORTE PARA PCs */
+.soportepcs-imagen-container{
+    padding: 0px 180px 0px 150px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.soporte-img-container {
+    width: 300px; /* Ajusta el ancho de la imagen según tus necesidades */
+    height: 150px;
+}
+.informacion-soportepsc-imagen-container{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 30% 5% 30% 5% 30%;
+}
+.informacion-soportepsc-imagen-container img{
+    margin-top: 20px;
+    margin-left: 0px;
+    width: 200px; /* Ajusta el ancho de la imagen según tus necesidades */
+    height: 150px; 
+}
+.informacion-parrafosegundobuttom{
+    margin-top: 22px;
+}
+.informacion-parrafosegundobuttom2{
+    margin-top: 65px;
+}
+
+/* Media query para ubicar uno por uno verticalmente en pantallas pequeñas */
+@media (max-width: 768px) {
+    .link,
+    .soporteimpresora-preguntasobrewindows{
+        
+        font-size: 12px;
+    }
+    .soportepcs-imagen-container {
+        padding: 0px 0px;
+    }
+    .informacion-soportepsc-imagen-container {
+        grid-template-columns: 100%; /* Ajustar a una sola columna */
+    }
+
+    .informacion-soportepsc-imagen-container img {
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block; /* Centrar la imagen horizontalmente */
+        width: 200px; /* Ajusta el ancho de la imagen según tus necesidades */
+        height: 150px;
+    }
+
+    .informacion-parrafosegundobuttom {
+        margin-top: 22px;
+    }
+
+    .informacion-parrafosegundobuttom2 {
+        margin-top: 15px;
+    }
+}

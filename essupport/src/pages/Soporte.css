@@ -1,0 +1,458 @@
+/* Soporte component styles */
+
+.soporte-container {
+    padding: 35px 0px 0px 0px;
+    /* Ajusta el valor según la altura de tu Header */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.soporte-h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    height: 240px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+
+h3 {
+    color: #f1f4f5;
+    padding-top: 30px;
+
+}
+
+
+.soporte-h3-item .icon-chevron-left {
+    background-color: transparent;
+    /* Relleno transparente */
+    border: 2px solid #f1f3f5;
+    /* Borde del círculo */
+    color: white;
+    /* Color del icono */
+    border-radius: 50%;
+    /* Para hacer el círculo */
+    font-size: 30px;
+    padding: 8px;
+    /* Espacio alrededor del icono dentro del círculo */
+    transition: background-color 0.3s;
+}
+
+.soporte-h3-item .icon-chevron-left:hover {
+    background-color: rgba(225, 235, 255, 0.5);
+}
+
+.soporte-h3-imagen1 {
+    background-image: url("https://miracomosehace.com/wp-content/uploads/2020/05/drivers-controladores.jpg");
+    background-size: contain;
+    height: 80%;
+    width: 30%;
+    background-size: cover;
+
+}
+
+
+.soporte-h3-imagen2 {
+    background-image: url("https://www.lavoz.com.ar/resizer/4SPk7ZYTGQUscULEpE0sUbvN6Uw=/980x640/smart/filters:quality(75):format(webp)/cloudfront-us-east-1.images.arcpublishing.com/grupoclarin/K4BTINJUYBA25OHTQRGD6ERKAA.jpg");
+    background-size: contain;
+    height: 80%;
+    width: 30%;
+    background-size: cover;
+
+}
+
+
+.soporte-h3-imagen3 {
+    background-image: url("https://rgbcustompc.com/cdn/shop/files/IMG_9247.jpg?v=1664481867&width=900");
+    background-size: contain;
+    height: 80%;
+    width: 30%;
+    background-size: cover;
+
+}
+
+.soporte-h3-margin1 {
+    margin: 10px 0;
+}
+
+.soporte-h3-margin2 {
+    margin: 20px 0;
+}
+
+.soporte-h3-margin3 {
+    margin: 30px 0;
+}
+
+.soporte-p {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding: 5px 0;
+    width: 100%;
+}
+
+
+
+.soport-container {
+    display: grid;
+    grid-template-columns: 75% 1% 24%;
+    /* Divide el grid en dos columnas (70% y 30%) */
+    gap: 20px;
+    padding: 0px 40px 30px 60px;
+}
+
+/* Estilos para la barra vertical */
+.separator {
+    width: 2px;
+    background-color: #ccc;
+    /* Color de la barra */
+    margin: 0 20px;
+    /* Espacio a los lados de la barra */
+    height: 100%;
+    /* Ajusta la altura al 100% para ocupar todo el espacio disponible */
+}
+
+.sport-container {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    /* Divide el grid en dos columnas (70% y 30%) */
+    gap: 20px;
+
+}
+
+/* Estilos para el contenedor de cada ícono y texto */
+.sporte-p {
+    display: flex;
+    /* Utilizamos flexbox para alinear elementos horizontalmente */
+    align-items: center;
+    /* Centra verticalmente los elementos */
+    font-size: 16px;
+    padding: 5px 0;
+    width: 100%;
+}
+
+/* Estilos para el contenedor de cada ícono y texto */
+.soporte-p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 5px 0;
+    width: 100%;
+    flex-wrap: wrap;
+
+    /* Permite que los elementos se coloquen en varias líneas */
+}
+
+/* Estilos para el ícono en cada contenedor */
+.soporte-p svg {
+    color: #f1f3f5;
+    font-size: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+    /* Espacio entre el ícono y el texto */
+}
+
+.soporte-p .icon-chevron-left {
+    background-color: transparent;
+    /* Relleno transparente */
+    border: 2px solid #f1f3f5;
+    /* Borde del círculo */
+    color: white;
+    /* Color del icono */
+    border-radius: 50%;
+    /* Para hacer el círculo */
+    font-size: 50px;
+    padding: 8px;
+    /* Espacio alrededor del icono dentro del círculo */
+    transition: background-color 0.3s;
+}
+
+.soporte-p .icon-chevron-left:hover {
+    background-color: rgb(3, 50, 82);
+}
+
+/* Estilos para el texto en cada contenedor */
+.soporte-p span {
+    display: block;
+    flex-grow: 1;
+    /* Hace que el texto ocupe todo el ancho y se muestre en una línea separada */
+}
+
+
+.soporte-contenedor {
+    width: 100vw;
+    /*height: 100vh;*/
+    background-color: rgb(3, 61, 95);
+
+}
+
+
+.soport-contenedor {
+    display: grid;
+    grid-template-columns: 15% 35% 50%;
+    padding: 20px 60px 0px 75px;
+}
+
+.soport-contenedor2 {
+    display: grid;
+    grid-template-columns: 15% 35% 4% 35% 11%;
+    padding: 20px 60px 0px 75px;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+
+}
+
+
+.icon {
+    margin-right: 8px;
+    background-color: transparent;
+    /* Relleno transparente */
+    border: 2px solid #f1f3f5;
+    /* Borde del círculo */
+    color: white;
+    /* Color del icono */
+    border-radius: 50%;
+    /* Para hacer el círculo */
+    font-size: 15px;
+    padding: 8px;
+    /* Espacio alrededor del icono dentro del círculo */
+    transition: background-color 0.3s;
+}
+
+.icon:hover {
+    background-color: rgba(225, 235, 255, 0.5);
+}
+
+.icon-container:hover {
+    color: rgb(241, 241, 248);
+
+}
+
+/* Estilos para el párrafo */
+.intro-text {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los contenedores de input y botón */
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos CSS */
+.input-text {
+    padding: 10px;
+    font-size: 16px;
+    /* Color del texto dentro del input */
+    border: 2px solid #007bff;
+    /* Borde del input antes de hacer clic */
+    border-radius: 4px;
+    transition: border-color 0.3s;
+    /* Transición de color de borde */
+}
+
+.input-text:focus {
+    border-color: #ccc;
+    /* Color de borde al enfocar el input */
+    outline: none;
+    /* Eliminar el borde de enfoque predeterminado */
+    box-shadow: 0 0 5px #007bff;
+    /* Agregar sombra al enfocar */
+}
+
+
+
+.submit-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el enlace */
+.link-container {
+    text-align: center;
+}
+
+.link {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+/* Estilos para el enlace cuando se coloca el cursor sobre él */
+.link:hover {
+    text-decoration: underline;
+}
+
+/* recuadro esupport detenta el producto*/
+.recuadro {
+    width: 315px;
+    height: 40px;
+    background-color: transparent;
+    /* Relleno transparente */
+    color: #007bff;
+    /* Color del texto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #007bff;
+    /* Borde azul */
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    /* Transición de color al hacer hover */
+}
+
+.recuadro:hover {
+    background-color: #094b92;
+    /* Color de fondo al hacer hover */
+    color: #fff;
+    /* Color del texto al hacer hover */
+}
+
+
+/* Tres iconos */
+
+/* Estilos para cada icono */
+.icon-print {
+    /* Estilos para el icono de impresora (FaPrint) */
+    margin-right: -10px;
+    font-size: 28px;
+
+}
+
+.icon-laptop {
+    /* Estilos para el icono de laptop (FaLaptop) */
+
+    font-size: 40px;
+    margin-top: 25px;
+}
+
+.icon-search {
+    /* Estilos para el icono de búsqueda (FaSearch) */
+    font-size: 60px;
+    margin-left: -10px;
+    transform: rotateY(180deg);
+
+}
+
+/* Media queries para dispositivos con un ancho máximo de 768px */
+@media (max-width: 768px) {
+
+    .soport-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 200px 0px 0px 0px;
+    }
+
+    .soporte-container {
+        flex-direction: column;
+        padding: 160px 0;
+    }
+
+    .soport-contenedor {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .sport-container {
+        grid-template-columns: 100%;
+    }
+
+    .separator {
+        width: 100%;
+        background-color: #ccc;
+        /* Color de la barra */
+        margin: 0 20px;
+        /* Espacio a los lados de la barra */
+        height: 2px;
+    }
+
+    .icon-container {
+        justify-content: center;
+    }
+
+    .soporte-p {
+        padding-top: 15px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .soporte-p svg {
+        font-size: 18px;
+        margin-right: 5px;
+    }
+    
+
+    .soporte-h3-item {
+        margin: 10px 0;
+        width: 100%;
+        height: 240px;
+    }
+    .soporte-h3 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .soporte-h3-imagen1,
+    .soporte-h3-imagen2,
+    .soporte-h3-imagen3 {
+        width: 100%;
+        height: auto;
+        background-size: cover;
+    }
+
+    .soport-contenedor2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    /* Ajusta los estilos de los elementos dentro del contenedor vertical */
+    .soport-contenedor2>* {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .container-iconos-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 0;
+    }
+}
+
+/* Otras media queries según tus necesidades y resoluciones objetivo */

@@ -1,0 +1,89 @@
+.container-proveedores {
+    text-align: center;
+    padding: 60px 180px;
+}
+
+.container-proveedores h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.productos-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.producto {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #044c8f;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.producto:hover {
+    background-color: #065488;
+    border: 1px solid #065488;
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.producto h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.producto img {
+    max-width: 90%;
+    height: 20%;
+    margin-bottom: 8px;
+}
+
+.producto .detalles-link {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 3px 8px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 12px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.producto .detalles-link:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .productos-list {
+        grid-template-columns: repeat(2, 1fr);
+        /* Cambiar a dos productos por fila */
+        gap: 10px;
+        /* Reducir el espacio entre productos */
+    }
+
+    .producto {
+        padding: 10px;
+        /* Reducir el padding del producto */
+    }
+
+    /* Ajusta otros estilos según sea necesario */
+}
+
+/* MARACA */
+
+.horizontal-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.horizontal-list li {
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #07408b;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

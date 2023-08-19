@@ -1,0 +1,300 @@
+.contacto-container {
+    padding: 80px 80px 0px 80px;
+}
+
+.header-contacto-container {
+    
+    padding: 0px 160px 0px 160px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.header-contacto-container p{
+    color: #000a0c;
+}
+.header-contacto-container p:hover{
+    color: #eef7f8;
+}
+
+
+.preguntas-contacto p {
+    color: #ffffff;
+}
+
+.contacto-separator {
+
+    width: 100%;
+    background-color: #ccc;
+    /* Color de la barra */
+    margin: 0 20px;
+    /* Espacio a los lados de la barra */
+    height: 2px;
+    /* Ajusta la altura al 100% para ocupar todo el espacio disponible */
+}
+
+
+/* Estilos para el spinner */
+.spinner-container {
+    /* Estilos para el contenedor del spinner */
+    position: relative;
+    padding: 5px 100px 5px 60px;
+}
+
+.spinner {
+    /* Estilos para el spinner */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.perifericos-wrapper {
+    /* Estilos del wrapper del desplegable */
+    position: relative;
+    cursor: pointer;
+}
+
+.periferico {
+    /* Estilos de cada opción del desplegable */
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.periferico:hover {
+    /* Estilos para resaltar la opción cuando el mouse está sobre ella */
+    color: brown;
+}
+
+.perifericos-list {
+    /* Estilos para la lista de opciones */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #34599e;
+    border: 1px solid #0a5ac4;
+    border-top: none;
+    width: 10%;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 1;
+}
+
+.selected {
+    /* Estilos para la opción seleccionada */
+    font-weight: bold;
+}
+
+.preguntas-container {
+    padding: 60px 180px 3px 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacto-preguntas-container {
+    padding: 0px 1px 3px 20px;
+}
+
+.preguntas-h3 {
+    padding: 0px 1px 3px 20px;
+    display: grid;
+    grid-template-columns: 95% 5%;
+}
+
+.preguntas-parrafos {
+    padding: 0px 1px 3px 20px;
+    color: rgb(239, 240, 248);
+
+}
+
+/* Media queries para dispositivos con un ancho máximo de 768px */
+@media (max-width: 768px) {
+    .contacto-container {
+        padding: 90px 20px 0;
+    }
+
+    .header-contacto-container {
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .preguntas-contacto p {
+        color: #ffffff;
+    }
+
+    .preguntas-container {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contacto-preguntas-container {
+        padding: 0;
+    }
+
+    .preguntas-h3 {
+        padding: 0;
+        grid-template-columns: 100%;
+    }
+
+    .preguntas-parrafos {
+        padding: 0;
+    }
+
+    /* Ajusta los estilos para las demás clases si es necesario */
+}
+
+
+
+
+
+
+/* FORMULARIO */
+
+.formulario-contacto {
+    padding: 50px 90px 40px 20px;
+    display: grid;
+    grid-template-columns: 28% 4% 68%;
+}
+
+.formulario-contacto-campos {
+    display: grid;
+    grid-template-columns: 48% 4% 48%;
+}
+
+.formulario-contacto-campo {
+    margin-top: 50px;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contacto-formulario-separator {
+    
+    width: 100%;
+    background-color: #f6f6f7;
+    /* Color de la barra */
+    margin: 0px 50px 0px 0px;
+    /* Espacio a los lados de la barra */
+    height: 2px;
+}
+
+.formulario-contacto-campo textarea:focus,
+.formulario-contacto-campo input:focus {
+    height: 30px;
+    border-color: #ccc;
+    /* Color de borde al enfocar el input */
+    outline: none;
+    /* Eliminar el borde de enfoque predeterminado */
+    box-shadow: 0 0 5px #dfe8f1;
+}
+.formulario-contacto-campo input{
+    
+    background-color: transparent;
+    border-color: transparent;
+}
+.formulario-contacto-campo textarea {
+    background-color: transparent;
+}
+.contacto-formulario-bottom{
+    height: 50px;
+    width: 40%;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: transparent;
+    border-color: #ffff;
+}
+.contacto-formulario-bottom:hover{
+    margin-top: 20px;
+    background-color: #141516;
+    
+}
+
+.contacto-formulario-ubicanos{
+    padding: 50px 50px 40px 100px;
+    display: grid;
+    grid-template-columns: 45% 55%;
+}
+.contacto-formulario-ubicanos-img img{
+    padding-top: 20px;
+    width:100%;
+    height: 80%;
+}
+.contacto-formulario-ubicanos-iconos li{
+    font-weight: bolder;
+}
+.contacto-formulario-ubicanos-icon{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    color: rgb(1, 202, 51);
+}
+.contacto-formulario-ubicanos-icon:hover{
+    color: #ffff;
+}
+.contacto-formulario-ubicanos-links{
+    padding-top: 15px;
+}
+.contacto-formulario-ubicanos-link:hover{
+    color: #ffff;
+}
+
+/* Media queries para dispositivos con un ancho máximo de 768px */
+@media (max-width: 768px) {
+    .formulario-contacto {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formulario-contacto-campos {
+        grid-template-columns: 100%;
+    }
+
+    .formulario-contacto-campo {
+        margin-top: 20px;
+    }
+
+    .formulario-contacto-campo input,
+    .formulario-contacto-campo textarea {
+        width: 100%;
+    }
+
+    .contacto-formulario-ubicanos {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacto-formulario-ubicanos-img img {
+        padding-top: 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    .contacto-formulario-ubicanos-iconos {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contacto-formulario-ubicanos-icon {
+        margin: 5px;
+    }
+
+    .contacto-formulario-ubicanos-links {
+        padding-top: 15px;
+    }
+    .contacto-formulario-bottom{
+        width: 100%;
+        
+    }
+}

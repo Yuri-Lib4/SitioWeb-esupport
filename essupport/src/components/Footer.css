@@ -1,0 +1,155 @@
+/* Footer Styles */
+.footer {
+    width: 100%;
+    background-color: #073c70;
+    padding: 30px 0;
+    position: absolute; /* Para salir del flujo normal y ocupar toda la pantalla */
+    left: 0; /* Alinea a la izquierda de la pantalla */
+    right: 0; /* Alinea a la derecha de la pantalla */
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.footer-nosotros{
+    display: grid;
+    grid-template-columns: 32% 1.8% 32% 1.8% 32%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footer-logo {
+    flex: 1;
+    max-width: 250px;
+}
+
+.footer-logo h1 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.footer-links {
+    flex: 1;
+    max-width: 250px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #007bff;
+}
+.footer-link{
+    color: #007bff;
+}
+
+.footer-contact {
+    flex: 1;
+    max-width: 250px;
+}
+
+.footer-contact h2 {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.footer-contact p {
+    font-size: 14px;
+    color: #fdfdfd;
+    margin-bottom: 4px;
+}
+
+.footer-social-icons {
+    flex: 1;
+    max-width: 250px;
+}
+
+.footer-social-icons h2 {
+    font-size: 18px;
+    color: #fffbfb;
+    margin-bottom: 10px;
+}
+
+.social-icons-footer {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.social-icons-footer li {
+    margin-right: 10px;
+}
+
+.social-icons-footer a {
+    color: #ffffff;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+.footer-bottom {
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #aaa8a8;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-nosotros {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centrar verticalmente */
+      }
+
+    .footer-logo,
+    .footer-links,
+    .footer-contact,
+    .footer-social {
+        margin-bottom: 20px;
+    }
+}
