@@ -274,7 +274,7 @@
 
 /* Estilos para los links del menú */
 .menu-links {
-  z-index: 4;
+  z-index: 1;
   width: 100%;
   background-color: #e7e1e1;
   display: grid;
@@ -637,7 +637,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #485004;
+  background: linear-gradient(to right, #44abf0, #940606);
   color: white;
   text-align: center;
   padding: 10px;
