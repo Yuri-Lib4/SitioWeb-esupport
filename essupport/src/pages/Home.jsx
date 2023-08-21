@@ -360,7 +360,7 @@ export function Home({ addToCart }) {
 
 
       <div className="ofertas-container">
-        <h1 className="ofertas">Los productos mas </h1>
+        <h1 className="ofertas">Los productos que estan en descuento </h1>
         <ul className="ofertas-list">
           {ofertas.map(({ id, nombreProducto, descuento, producto }) => (
             <li key={id} className="oferta-item">

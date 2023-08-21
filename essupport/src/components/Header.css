@@ -582,6 +582,7 @@
 
 /* Estilos para el formulario del modal */
 .modal-content form {
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -589,12 +590,14 @@
 
 /* Estilos para las etiquetas del formulario */
 .modal-content label {
+ 
   font-weight: bold;
   margin-bottom: 5px;
 }
 
 /* Estilos para los campos de entrada del formulario */
 .modal-content input {
+  color: #01010a;
   width: 100%;
   padding: 8px;
   border: 1px solid #ccc;
